@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fffbfb;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666666;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d4d4d4;
+  background-color: #fffbfb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+.checkbox {
+  appearance: none;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border: 1px solid #979595;
+  border-radius: 4px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #616060;
+}
+
+.checkbox:checked::before {
+  content: "\2713";
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 3px;
+  width: 8%;
+  padding: 10px;
+  color: white;
+  border: 1px solid #313131;
+  background-color: #3a3131;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.firstForm {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0px auto;
+}
+
+.secondForm {
+  width: 95%;
+  margin: 0px auto;
+}
+
+.firstForm .firstFormContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#mainForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px1;
+}
+
+h2 {
+  background-color: #182e6a;
+  margin: 0px;
+  padding: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.informationContainer p:nth-child(1) {
+  font-weight: bold;
+  font-size: 14px;
+  color: #616060;
+}
+
+.informationContainer p:nth-child(2) {
+  font-style: italic;
+  font-size: 14px;
+  color: #616060;
+}

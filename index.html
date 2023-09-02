@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Granicus</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="mainForm">
+      <h2>Personal Information</h2>
+
+      <div class="firstForm">
+        <div class="firstFormContainer">
+          <div>
+            <label for="firstName" class="required">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+
+          <div>
+            <label for="midInitial">Middle Initial:</label>
+            <input type="text" id="midInitial" name="midInitial" />
+          </div>
+
+          <div>
+            <label for="lastName:" class="required">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="firstFormContainer">
+          <div>
+            <label for="reStAddress" class="required"
+              >Residential Street Address:</label
+            >
+            <input type="text" id="reStAddress" name="reStAddress" required />
+          </div>
+
+          <div>
+            <label for="reStAddress2">Residential Street Address 2:</label>
+            <input type="text" id="reStAddress2" name="reStAddress2" />
+          </div>
+        </div>
+
+        <div class="firstFormContainer">
+          <div>
+            <label for="resCity" class="required">Residential City</label>
+            <input type="text" id="resCity" name="resCity" required />
+          </div>
+
+          <div>
+            <label for="residentialZip" class="required"
+              >Residential Zip:</label
+            >
+            <input
+              type="text"
+              id="residentialZip"
+              name="residentialZip"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="secondForm">
+        <label for="checkbox"
+          >Is your Mailing Address the same as your Residential Address?</label
+        >
+        <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" />
+        Yes
+      </div>
+
+      <div class="firstForm">
+        <div class="firstFormContainer">
+          <div>
+            <label for="maStAddress" class="required"
+              >Mailing Street Address:</label
+            >
+            <input type="text" id="maStAddress" name="maStAddress" required />
+          </div>
+
+          <div>
+            <label for="maStAddress2">Mailing Street Address 2:</label>
+            <input type="text" id="maStAddress2" name="maStAddress2" />
+          </div>
+        </div>
+
+        <div class="firstFormContainer">
+          <div>
+            <label for="maiCity" class="required">Mailing City:</label>
+            <input type="text" id="maiCity" name="maiCity" required />
+          </div>
+
+          <div>
+            <label for="mailingZip" class="required">Mailing Zip:</label>
+            <input type="text" id="mailingZip" name="mailingZip" required />
+          </div>
+        </div>
+
+        <div class="firstFormContainer">
+          <div>
+            <label for="phoneNumbre" class="required"
+              >Primary Phone Numbre:</label
+            >
+            <input type="text" id="phoneNumbre" name="phoneNumbre" required />
+          </div>
+
+          <div>
+            <label for="phoneNumbre2">Secondary Phone Number:</label>
+            <input type="text" id="phoneNumbre2" name="phoneNumbre2" />
+          </div>
+        </div>
+        <div class="firstFormContainer">
+          <div>
+            <label for="faxNumber">Fax Number:</label>
+            <input type="text" id="faxNumber" name="faxNumber" />
+          </div>
+
+          <div>
+            <label for="email" class="required">E-mail Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+      </div>
+
+      <h2>Acknowledgement</h2>
+
+      <div class="informationContainer">
+        <p>
+          PLEASE READ THE FOLLOWING STATEMENT CAREFULLY BEFORE SUBMITTING YOUR
+          APPLICATION:
+        </p>
+        <p>
+          I CERTIFY THAT ALL STATEMENTS THAT I HAVE MADE ON THIS APPLICATION AND
+          ANY OTHER SUPPLEMENTARY MATERIALS ARE TRUE AND CORRECT. I HEREBY
+          AUTHORIZE THE CITY OF TEMPLE TO INVESTIGATE THE ACCURACY OF THIS
+          INFORMATION FROM ANY PERSON OR ORGANIZATION, AND I RELEASE THE CITY OF
+          TEMPLE AND ALL PERSONS AND ORGANIZATION FROM ALL CLAIMS AND
+          LIABILITIES ARISING FROM SUCH INVESTIGATION OR THE SUPPLYING OF
+          INFORMATION FOR SUCH INVESTIGATION. I ACKNOWLEDGE THAT ANY FALSE
+          STATEMENT OR MISREPRESENTATION ON THIS APPLICATION OR SUPPLEMENTARY
+          MATERIALS WILL BE CAUSE FOR REFUSAL OF APPOINTMENT OR IMMEDIATE
+          DISMISSAL AT ANY TIME DURING THE PERIOD OF MY APPOINTMENT.
+        </p>
+      </div>
+
+      <div class="div-button">
+        <button id="done" type="submit">SUBMIT</button>
+        <button id="cleaner">CANCEL</button>
+      </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
